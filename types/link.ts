@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 
 interface Link {
   document?: string
@@ -9,7 +9,7 @@ interface Link {
 }
 
 export const query = graphql`
-  fragment Link on PrismicLinkType {
+  fragment Link on LinkType {
     link_type
     type
     uid

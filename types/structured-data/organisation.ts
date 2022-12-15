@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 
 interface StructuredDataOrganisation {
   data: {
@@ -15,7 +15,7 @@ interface StructuredDataOrganisation {
 }
 
 export const query = graphql`
-  fragment StructuredDataOrganisation on PrismicStructuredDataOrganisation {
+  fragment StructuredDataOrganisation on StructuredDataOrganisation {
     data {
       company_name
       company_website

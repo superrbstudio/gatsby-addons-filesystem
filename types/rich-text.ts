@@ -1,14 +1,13 @@
-import { graphql } from 'gatsby'
-import { PrismicRichTextProps } from '@prismicio/react'
+import { graphql } from "gatsby"
 
 interface RichText {
   html: string
-  richText: PrismicRichTextProps['field']
+  richText: string
   text: string
 }
 
 export const query = graphql`
-  fragment RichText on PrismicStructuredTextType {
+  fragment RichText on StructuredTextType {
     html
     richText
     text

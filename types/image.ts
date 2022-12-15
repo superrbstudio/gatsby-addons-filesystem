@@ -1,3 +1,5 @@
+import { graphql } from "gatsby"
+
 export enum ImageLayout {
   none,
   cover,
@@ -12,5 +14,11 @@ interface Image {
     srcSet?: string
   }
 }
+
+export const query = graphql`
+  fragment Image on Image {
+    alt
+  }
+`
 
 export default Image

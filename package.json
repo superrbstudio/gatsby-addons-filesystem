@@ -8,7 +8,9 @@
   "license": "MIT",
   "peerDependencies": {
     "gatsby": "^4.6.0",
-    "gatsby-source-filesystem": "^4.3.0"
+    "gatsby-source-filesystem": "^4.3.0",
+    "gatsby-transformer-yaml": "^4.3.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
@@ -19,6 +21,7 @@
     "prepare": "install-peers"
   },
   "dependencies": {
-    "install-peers-cli": "^2.2.0"
+    "install-peers-cli": "^2.2.0",
+    "marked": "^4.2.4"
   }
 }
