@@ -16,8 +16,17 @@ interface Image {
 }
 
 export const query = graphql`
-  fragment Image on Image {
+  fragment Image on ImageType {
     alt
+    file {
+      childImageSharp {
+        fluid {
+          src
+          base64
+          srcSet
+        }
+      }
+    }
   }
 `
 

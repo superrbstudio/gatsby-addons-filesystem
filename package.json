@@ -8,7 +8,9 @@
   "license": "MIT",
   "peerDependencies": {
     "gatsby": "^4.6.0",
+    "gatsby-plugin-sharp": "^4.3.0",
     "gatsby-source-filesystem": "^4.3.0",
+    "gatsby-transformer-sharp": "^4.3.0",
     "gatsby-transformer-yaml": "^4.3.0",
     "react-helmet": "^6.1.0"
   },
