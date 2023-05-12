@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React, { ForwardedRef, forwardRef, memo } from "react"
 import { RichText as RichTextType } from "../../types"
 
 interface Props {
@@ -6,10 +6,16 @@ interface Props {
   className: string
 }
 
-const RichText = ({ field, className = "" }: Props) => {
-  return (
-    <div className={className} dangerouslySetInnerHTML={{ __html: field }} />
-  )
-}
+const RichText = forwardRef(
+  ({ field, className = "" }: Props, ref: ForwardedRef<HTMLDivElement>) => {
+    return (
+      <div
+        className={className}
+        dangerouslySetInnerHTML={{ __html: field }}
+        ref={ref}
+      />
+    )
+  }
+)
 
 export default memo(RichText)
