@@ -48,6 +48,11 @@ fulcon@^1.0.1:
   resolved "https://registry.yarnpkg.com/fulcon/-/fulcon-1.0.2.tgz#8a4dfda4c73fcd9cc62a79d5045c392b45547320"
   integrity sha512-vYwUBqbdo9XK0NmN7cFmURmy2T1YHpEsTCbxGO3aErxx6a0Z/HkWXcqcPkk7yOuJ74mSAHGWGBSBBd6v3GKebA==
 
+github-slugger@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/github-slugger/-/github-slugger-2.0.0.tgz#52cf2f9279a21eb6c59dd385b410f0c0adda8f1a"
+  integrity sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==
+
 install-peers-cli@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/install-peers-cli/-/install-peers-cli-2.2.0.tgz#f76f1ec8ac9fa7f920c05743e011554edad85f8d"
@@ -55,6 +60,18 @@ install-peers-cli@^2.2.0:
   dependencies:
     commander "^2.20.0"
     executioner "^2.0.1"
+
+marked-gfm-heading-id@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/marked-gfm-heading-id/-/marked-gfm-heading-id-3.0.3.tgz#dbcf18066ae880600575801d6efc90f0c315c116"
+  integrity sha512-ouAOxtHYa34yFocjCk5xIIcEjg40YXNdpkfLqH6TGbkmXPMPxApWXLdOi0Z1AXUweMQC9bWt2e8MGrIYB2f6+w==
+  dependencies:
+    github-slugger "^2.0.0"
+
+marked-mangle@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/marked-mangle/-/marked-mangle-1.0.1.tgz#022486251cde50a08a23b9675b3a7096266d7c3f"
+  integrity sha512-ZmWErsTkfE78OFgrpry2XGh+lYNRePfGy7bGh20l4rWHsH+bciKth1IHQXO9B6Ov5dHmY0jAswvgDxtcxGcFQQ==
 
 marked@^5.0.2:
   version "5.0.2"
