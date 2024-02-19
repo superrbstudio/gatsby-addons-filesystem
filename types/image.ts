@@ -1,4 +1,6 @@
 import { graphql } from "gatsby"
+import { IGatsbyImageData } from "gatsby-plugin-image"
+
 
 export enum ImageLayout {
   none,
@@ -8,11 +10,7 @@ export enum ImageLayout {
 
 interface Image {
   alt: string
-  fluid: {
-    src: string
-    base64?: string
-    srcSet?: string
-  }
+  gatsbyImageData: IGatsbyImageData
 }
 
 export const query = graphql`
@@ -20,11 +18,11 @@ export const query = graphql`
     alt
     file {
       childImageSharp {
-        fluid {
-          src
-          base64
-          srcSet
-        }
+        gatsbyImageData(
+          width: 200
+          breakpoints: [25, 750, 1080, 1366, 1920, 2560, 3840, 4096, 5120]
+          formats: [AUTO, WEBP, AVIF]
+        )
       }
     }
   }
