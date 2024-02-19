@@ -19,7 +19,7 @@ export const query = graphql`
     file {
       childImageSharp {
         gatsbyImageData(
-          width: 200
+          width: 1200
           breakpoints: [25, 750, 1080, 1366, 1920, 2560, 3840, 4096, 5120]
           formats: [AUTO, WEBP, AVIF]
         )
